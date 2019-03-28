@@ -1,5 +1,6 @@
 <?php
 // include QR_BarCode class
+///////////// genera un QR usando la API DE GOOGLE, EL CONTRA ES QUE NO SE PUEDE GENERAR EN MASAS =U.U= SE CAE AL 4TO O 5TO CODIGO
 sleep(1);
 header("Content-type: image");
 include('abredb.php');
