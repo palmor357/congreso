@@ -5,13 +5,8 @@ include('mem_image.php');
 if($_REQUEST)
 {
         $RUT    = $_REQUEST['rut'];
-        $link = "http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion"; // Link goes here!
-        $link2 = 'http://chart.googleapis.com/chart?cht=qr&chs=250x100&chl=http://dbcitometria.royalwebhosting.net/cursos/2019/validacion.php?rut='.$RUT; // Enlace para verificar el certificado
-        $Nombbre = $_GET['nombre'];
-        $A_Paterno = $_GET['A_Paterno'];
-        $A_Materno = $_GET['A_Materno'];
-
-        $Nota = $_GET['Nota_Curso'];
+        $link = "http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion"; // enlace a la pagina de validacion del certificado
+        $link2 = 'http://dbcitometria.royalwebhosting.net/cursos/2019/phpqrcode/genqr.php?rut='.$RUT; // Enlace para GENERAR QR dentro del servidor con php en el certificado 
 
     $sql = "select * from kbd9n_chronoforms_data_curso_2019 where rut = '$RUT' and Asiste_curso = 'SI'";
     
