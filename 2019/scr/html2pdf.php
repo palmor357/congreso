@@ -3,6 +3,7 @@
 //ac.lavoillotte@noos.fr
 //webmaster@streetpc.tk
 //http://www.streetpc.tk
+///// CODIGO MEZCLADO DE 2 LIBRERIAS PARA PODER PROTEGER EL PDF HECHO EN HTML
 
 require('fpdf.php');
 
