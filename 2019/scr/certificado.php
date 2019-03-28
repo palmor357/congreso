@@ -1,6 +1,7 @@
 <?php
 sleep(1);
 include('abredb.php');
+////////////////// generar el certificado por el lado del cliente con JQERY
 if($_REQUEST)
 {
 	$link = "http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion"; // Link goes here!
