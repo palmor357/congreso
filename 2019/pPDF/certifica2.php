@@ -16,7 +16,7 @@ if($_REQUEST)
     {
         echo'<script type="text/javascript">
                             alert("Alumno no encontrado en nuestra base de datos");
-                            window.location.href="http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion";
+                            window.location.href="http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/certificado";
                      </script>';
     }
     else
