@@ -111,7 +111,7 @@ class VariableStream
     }
 }
 
-class PDF_MemImage extends FPDF
+class PDF_pPDF extends FPDF
 {
     function __construct($orientation='P', $unit='mm', $format='A4')
     {
