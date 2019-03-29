@@ -3,24 +3,19 @@ sleep(1);
 include('abredb.php');
 if($_REQUEST)
 {
-	$link = "http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion"; // Link goes here!
-        $Nombbre = $_GET['nombre'];
-        $A_Paterno = $_GET['A_Paterno'];
-        $A_Materno = $_GET['A_Materno'];
-        $Taller = $_GET['Taller'];
-        $Nota = $_GET['Nota_Curso'];
+	$link = "http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion"; // Link para volver a la página de validacion
         $RUT 	= $_REQUEST['rut'];
-	$sql = "select * from kbd9n_chronoforms_data_curso_2019 where rut = '$RUT' and Asiste_curso = 'SI'";
+	$sql = "select * from kbd9n_chronoforms_data_curso_2019 where rut = '$RUT' and Asiste_curso = 'SI'";  /// consulta rut y si asiste curso
 	$results = mysql_query( $sql ) or die('ok');
 	
-	if(mysql_num_rows(@$results) <= 0) // not available
+	if(mysql_num_rows(@$results) <= 0) // si no arroja resultados
 	{
 		echo'<script type="text/javascript">
                             alert("Alumno no encontrado en nuestra base de datos");
                             window.location.href="http://dbcitometria.royalwebhosting.net/index.php/recursos/2019-01-28-19-11-19/curso-2019/validacion";
                      </script>';
 	}
-	else
+	else  /// en caso de que de una coincidencia
 	{
 		while($row = mysql_fetch_array($results)) {	
 		
