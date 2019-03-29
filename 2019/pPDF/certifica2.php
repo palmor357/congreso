@@ -26,7 +26,7 @@ if($_REQUEST)
 
                 $image = "http://dbcitometria.royalwebhosting.net/cursos/2019/background.php";
                 
-                $pdf=new PDF_MemImage();
+                $pdf=new PDF_pPDF();
                 $pdf->SetFont('Arial','',28);
                 $pdf->SetProtection(array('print'));
                 $pdf->AddPage('P','Letter');
