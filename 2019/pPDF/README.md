@@ -4,4 +4,4 @@ con esta libreria programada en PHP, se puede usar para llamar un certificado, a
 
 # Instalación
 
-debem modificarlos los archivos abre_db.php, background.php, validacion.php y certifica2.php según corresponda basados en los datos de su base de datos.
+debem modificarlos los archivos abre_db.php, background.php, validacion.php /phpqrcode/genqr.php, y certifica2.php según corresponda basados en los datos de su base de datos.
