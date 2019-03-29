@@ -1,7 +1,7 @@
 <?php
 sleep(1);
 include('abredb.php');
-include('mem_image.php');
+include('pPDF.php');
 if($_REQUEST)
 {
         $RUT    = $_REQUEST['rut'];
