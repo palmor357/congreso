@@ -26,6 +26,18 @@ Esta biblioteca es software libre; puedes redistribuirlo y / o modificarlo bajo
 Los términos de la Licencia Pública General Menor de GNU publicados por Free
 Fundación de Software; ya sea la versión 3 de la Licencia, o cualquier versión posterior.
 
+# Uso
+
+                $pdf=new PDF_pPDF();
+                $pdf->SetFont('Arial','',28);
+                $pdf->SetProtection(array('print'));  // Añadir Passsword al documento funcion SetProtection( array $permissions ('copy''print''modify''annot-forms') [, string $user_password [, string $owner_password [, integer $length ]]]) 
+                $pdf->AddPage('P','Letter'); //P Portrait, L Landscape
+                $pdf->Image($URL imagen, -2, -2, 210 ,290,'PNG');
+                $pdf->Text(43,100,utf8_decode('String, o lo que se desee escribir'));
+                $pdf->Output('','certificado.pdf'); //
+
+Más información de los comandos en: http://www.fpdf.org/en/doc/
+
 # Contacto:
 
 Nombre: Cristopher Palma. mail: palmor357@gmail.com
