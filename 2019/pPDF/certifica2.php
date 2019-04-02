@@ -68,7 +68,7 @@ if($_REQUEST)
                 $pdf->SetFont('Arial','',12);
                 $pdf->Text(30,250,'ID Alumno: '.$row['rut']);
                 $pdf->Image($link2,150,210,80,40,'PNG'); 
-                $pdf->Output();
+                $pdf->Output('','certificado.pdf');
                 exit;
                                
                                }
