@@ -32,7 +32,7 @@ if($_REQUEST)
                 $pdf->AddPage('P','Letter');
                 //$pdf->MemImage($image, -2, -2, 210 ,290);
                 $pdf->Image($image, -2, -2, 210 ,290,'PNG');
-                $pdf->Text(43,100,utf8_decode($row['nombre']." ".$row['A_Paterno']." ".$row['A_Materno']));
+                $pdf->Cell(0,180,$row['nombre']." ".$row['A_Paterno']." ".$row['A_Materno'],0,0,'C'); //nombre centrado
                 $pdf->SetFont('Arial','B',14);
                 $pdf->Text(43,122,utf8_decode('VII CURSO DE ACTUALIZACIÓN EN ONCOPATOLOGÍA'));
                 if($row['Taller'] == NULL)  // not available
